@@ -80,7 +80,7 @@ function checkCapcha_login($g_recaptcha_response)
 }
 
 function isPasswordHard($password){
-    $f = fopen(__DIR__."\..\_add\popular_password_100000.txt","r");
+    $f = fopen(__DIR__."\..\_add\popular_password_1000000.txt","r");
     if ($f) {
         while(!feof($f)) { 
             $str = trim(fgets($f));
